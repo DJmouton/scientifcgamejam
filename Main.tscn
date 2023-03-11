@@ -1,17 +1,236 @@
-[gd_scene load_steps=3 format=3 uid="uid://bcg5uuufujxj4"]
+[gd_scene load_steps=14 format=3 uid="uid://325b5kkn60iu"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_fkpx2"]
+[ext_resource type="Script" path="res://supragraph.gd" id="1_3037u"]
+[ext_resource type="Texture2D" uid="uid://e8n4e0fdw6vu" path="res://icon.svg" id="2_vfijh"]
+[ext_resource type="Texture2D" uid="uid://cl61rob7jp8bk" path="res://bcgrnd_gam_jam_etoile.png" id="3_h1f80"]
+[ext_resource type="Texture2D" uid="uid://clee87yglur44" path="res://fond_flou_vitesse.png" id="3_na132"]
+[ext_resource type="Texture2D" uid="uid://c4ahv6qtru5fq" path="res://graph_CeCu2Si2-xGex2.png" id="4_o2jji"]
+[ext_resource type="Texture2D" uid="uid://bx2d2ib1cswpb" path="res://graph_Fer.png" id="5_vvw0t"]
+[ext_resource type="Texture2D" uid="uid://dq2gk3kitn5vm" path="res://graph_graphene.png" id="6_l6t6e"]
+[ext_resource type="Texture2D" uid="uid://qvxogsmfbial" path="res://graph_ute2.png" id="7_nd16k"]
+[ext_resource type="Theme" uid="uid://crbqslbl3hd2d" path="res://gameplay_theme.tres" id="8_u1qvh"]
+[ext_resource type="Texture2D" uid="uid://ceht604xgn24u" path="res://Fichier_9.png" id="8_u476q"]
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_6d84p"]
-size = Vector2(10, 10)
+[sub_resource type="InputEventAction" id="InputEventAction_twvih"]
 
-[node name="main" type="Node2D"]
+[sub_resource type="Shortcut" id="Shortcut_gsl2q"]
+events = [SubResource("InputEventAction_twvih")]
 
-[node name="RigidBody2D" type="RigidBody2D" parent="."]
-position = Vector2(11.601, 0)
+[sub_resource type="CircleShape2D" id="CircleShape2D_sb4fr"]
+radius = 1.0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
-shape = SubResource("CircleShape2D_fkpx2")
+[node name="Main" type="Node2D"]
+script = ExtResource("1_3037u")
+color_collision_in = Color(0, 1, 0, 1)
+color_collision_out = Color(1, 0, 0, 1)
+speed_increase_factor = 30.0
+speed_decrease_factor = 8.0
+pressure_increase_speed = 0.8
+pressure_decrease_speed = 0.4
+supra_speed = 2400.0
+star_background = ExtResource("3_h1f80")
+supra_background = ExtResource("3_na132")
+graph1_sprite = ExtResource("4_o2jji")
+graph2_sprite = ExtResource("5_vvw0t")
+graph3_sprite = ExtResource("6_l6t6e")
+graph4_sprite = ExtResource("7_nd16k")
+metadata/_edit_vertical_guides_ = []
 
-[node name="Sprite2D" type="Sprite2D" parent="RigidBody2D"]
-texture = SubResource("PlaceholderTexture2D_6d84p")
+[node name="StaticUI" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Dashboard" type="TextureRect" parent="StaticUI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -14.343
+anchor_top = -8.063
+anchor_right = 14.388
+anchor_bottom = 8.063
+offset_left = 19.02
+offset_top = 386.52
+offset_right = 718.78
+offset_bottom = 176.48
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("8_u476q")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -30
+texture_repeat = 2
+position = Vector2(-4, 21)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_h1f80")
+region_enabled = true
+region_rect = Rect2(0, 0, 1920, 1080)
+
+[node name="Graph" type="Node2D" parent="."]
+
+[node name="UI" type="Control" parent="Graph"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="GraphLabel" type="RichTextLabel" parent="Graph/UI"]
+offset_left = -113.0
+offset_top = 67.0
+offset_right = 116.0
+offset_bottom = 107.0
+theme = ExtResource("8_u1qvh")
+
+[node name="PressureSlider" type="VSlider" parent="Graph/UI"]
+offset_left = 513.0
+offset_top = 212.0
+offset_right = 534.0
+offset_bottom = 373.0
+rotation = 1.5708
+scale = Vector2(2, 2)
+theme = ExtResource("8_u1qvh")
+max_value = 1.0
+step = 0.01
+
+[node name="SpeedBar" type="ProgressBar" parent="Graph/UI"]
+layout_mode = 0
+offset_left = -85.0
+offset_top = 178.0
+offset_right = 85.0
+offset_bottom = 205.0
+max_value = 1.0
+show_percentage = false
+
+[node name="HeliumBar" type="ProgressBar" parent="Graph/UI"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = -14.299
+anchor_top = -7.974
+anchor_right = 14.343
+anchor_bottom = 8.063
+offset_left = 157.96
+offset_top = 531.96
+offset_right = -775.72
+offset_bottom = -65.52
+theme = ExtResource("8_u1qvh")
+max_value = 1.0
+show_percentage = false
+
+[node name="HeliumButton" type="Button" parent="Graph/UI"]
+layout_mode = 0
+offset_left = -520.352
+offset_top = 169.398
+offset_right = -456.352
+offset_bottom = 233.398
+scale = Vector2(2, 2)
+theme = ExtResource("8_u1qvh")
+shortcut = SubResource("Shortcut_gsl2q")
+
+[node name="PressureLabel" type="RichTextLabel" parent="Graph/UI"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = -89.0
+offset_right = 276.0
+offset_bottom = -49.0
+text = "Pressure"
+
+[node name="HeliumLabel" type="RichTextLabel" parent="Graph/UI"]
+layout_mode = 0
+offset_left = -319.0
+offset_top = -155.0
+offset_right = -204.0
+offset_bottom = -115.0
+text = "Helium"
+
+[node name="HeliumButtonLabel" type="RichTextLabel" parent="Graph/UI"]
+layout_mode = 0
+offset_left = -482.0
+offset_top = 197.0
+offset_right = -367.0
+offset_bottom = 249.0
+text = "Inject
+Helium"
+
+[node name="Graphs" type="Node2D" parent="Graph"]
+position = Vector2(0, 187)
+scale = Vector2(0.681, 1)
+
+[node name="GraphSprite" type="Sprite2D" parent="Graph/Graphs"]
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("5_vvw0t")
+
+[node name="GraphArea2D" type="Area2D" parent="Graph/Graphs"]
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D"]
+polygon = PackedVector2Array(19, 90, 3, 53, -30, 64, -48, 89, -51, 89, -72, 75, -84, 74, -94, 83, -112, 84, -111, 89)
+
+[node name="GraphArea2D2" type="Area2D" parent="Graph/Graphs"]
+visible = false
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D2"]
+polygon = PackedVector2Array(98, -15, 58, 31, 53, 91, 136, 91, 136, 0)
+
+[node name="GraphArea2D3" type="Area2D" parent="Graph/Graphs"]
+visible = false
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D3"]
+polygon = PackedVector2Array(-45, 90, -84, -72, -136, 90)
+
+[node name="GraphArea2D4" type="Area2D" parent="Graph/Graphs"]
+visible = false
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D4"]
+polygon = PackedVector2Array(-65, -26, -112, 50, -136, 37, -136, 90, -49, 90)
+
+[node name="Timer" type="Timer" parent="Graph/Graphs"]
+
+[node name="Cursor" type="Area2D" parent="Graph"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Graph/Cursor"]
+shape = SubResource("CircleShape2D_sb4fr")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Graph/Cursor"]
+modulate = Color(1, 0, 1, 1)
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_vfijh")
+
+[node name="Sprite2D3" type="Sprite2D" parent="Graph/Cursor"]
+modulate = Color(1, 0, 1, 1)
+rotation = 2.35619
+scale = Vector2(0.1, 0.1)
+texture = ExtResource("2_vfijh")
+
+[node name="GraphMarkers" type="Node2D" parent="Graph"]
+
+[node name="Origin" type="Node2D" parent="Graph/GraphMarkers"]
+position = Vector2(-93, 279)
+
+[node name="TemperatureMaxAxis" type="Node2D" parent="Graph/GraphMarkers"]
+position = Vector2(-93, 128)
+
+[node name="PressureMaxAxis" type="Node2D" parent="Graph/GraphMarkers"]
+position = Vector2(88, 278)
+
+[node name="CollisionCheckSprite" type="Sprite2D" parent="Graph"]
+position = Vector2(0, 137)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("2_vfijh")
+
+[node name="Dashboard" type="Sprite2D" parent="."]
+
+[connection signal="button_down" from="Graph/UI/HeliumButton" to="." method="_on_helium_button_button_down"]
+[connection signal="button_up" from="Graph/UI/HeliumButton" to="." method="_on_helium_button_button_up"]
+[connection signal="area_entered" from="Graph/Graphs/GraphArea2D" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Graph/Graphs/GraphArea2D" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Graph/Graphs/GraphArea2D2" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Graph/Graphs/GraphArea2D2" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Graph/Graphs/GraphArea2D3" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Graph/Graphs/GraphArea2D3" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Graph/Graphs/GraphArea2D4" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Graph/Graphs/GraphArea2D4" to="." method="_on_area_2d_area_exited"]
+[connection signal="timeout" from="Graph/Graphs/Timer" to="." method="_on_timer_timeout"]

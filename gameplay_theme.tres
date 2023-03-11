@@ -1,0 +1,27 @@
+[gd_resource type="Theme" load_steps=8 format=3 uid="uid://crbqslbl3hd2d"]
+
+[ext_resource type="Texture2D" uid="uid://djj4j0xqiqmea" path="res://Fichier_12.png" id="1_16yay"]
+[ext_resource type="Texture2D" uid="uid://dwcj0mn5l0v0a" path="res://Fichier_15.png" id="2_xc6u2"]
+[ext_resource type="Texture2D" uid="uid://bi22ksgk6jbc1" path="res://Fichier_13.png" id="3_j4cvl"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_txewj"]
+texture = ExtResource("1_16yay")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_10bh5"]
+texture = ExtResource("2_xc6u2")
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y7b32"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y2evs"]
+texture = ExtResource("3_j4cvl")
+
+[resource]
+/icons/crosshair = null
+/icons/helium_button = ExtResource("1_16yay")
+/icons/helium_button_pressed = ExtResource("2_xc6u2")
+Button/styles/disabled = SubResource("StyleBoxTexture_txewj")
+Button/styles/hover = SubResource("StyleBoxTexture_txewj")
+Button/styles/normal = SubResource("StyleBoxTexture_txewj")
+Button/styles/pressed = SubResource("StyleBoxTexture_10bh5")
+ProgressBar/styles/background = SubResource("StyleBoxTexture_y7b32")
+ProgressBar/styles/fill = SubResource("StyleBoxTexture_y2evs")
