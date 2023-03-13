@@ -1,28 +1,78 @@
-[gd_scene load_steps=14 format=3 uid="uid://325b5kkn60iu"]
+[gd_scene load_steps=51 format=3 uid="uid://325b5kkn60iu"]
 
 [ext_resource type="Script" path="res://supragraph.gd" id="1_3037u"]
 [ext_resource type="Texture2D" uid="uid://e8n4e0fdw6vu" path="res://icon.svg" id="2_vfijh"]
 [ext_resource type="Texture2D" uid="uid://cl61rob7jp8bk" path="res://bcgrnd_gam_jam_etoile.png" id="3_h1f80"]
 [ext_resource type="Texture2D" uid="uid://clee87yglur44" path="res://fond_flou_vitesse.png" id="3_na132"]
-[ext_resource type="Texture2D" uid="uid://c4ahv6qtru5fq" path="res://graph_CeCu2Si2-xGex2.png" id="4_o2jji"]
-[ext_resource type="Texture2D" uid="uid://bx2d2ib1cswpb" path="res://graph_Fer.png" id="5_vvw0t"]
-[ext_resource type="Texture2D" uid="uid://dq2gk3kitn5vm" path="res://graph_graphene.png" id="6_l6t6e"]
-[ext_resource type="Texture2D" uid="uid://qvxogsmfbial" path="res://graph_ute2.png" id="7_nd16k"]
+[ext_resource type="Texture2D" uid="uid://b40vq3wtjdya0" path="res://Fichier 23.png" id="4_r4kdb"]
+[ext_resource type="Texture2D" uid="uid://d4gxuhr0ck2m" path="res://Fichier 21.png" id="5_rf8ov"]
+[ext_resource type="Texture2D" uid="uid://dho4dv1mo2ou5" path="res://Fichier 24.png" id="6_3kdlp"]
+[ext_resource type="Texture2D" uid="uid://ckqk4biefp4ud" path="res://Fichier 20.png" id="7_ai3a3"]
 [ext_resource type="Theme" uid="uid://crbqslbl3hd2d" path="res://gameplay_theme.tres" id="8_u1qvh"]
-[ext_resource type="Texture2D" uid="uid://ceht604xgn24u" path="res://Fichier_9.png" id="8_u476q"]
+[ext_resource type="Texture2D" uid="uid://cc7umgfiv350v" path="res://Fichier 22.png" id="8_x80g7"]
+[ext_resource type="Texture2D" uid="uid://csgl1kayw1v8e" path="res://Fichier 2.png" id="9_hh6cn"]
+[ext_resource type="Texture2D" uid="uid://ulvrc05pjcfr" path="res://Fichier_10.png" id="10_0cshv"]
+[ext_resource type="Texture2D" uid="uid://blbeqm6gr3171" path="res://Fichier 4.png" id="10_27hfm"]
+[ext_resource type="Texture2D" uid="uid://dsvy17deb6skh" path="res://Fichier 3.png" id="11_xl88n"]
+[ext_resource type="Texture2D" uid="uid://dtlwdrlynh2u8" path="res://Fichier_21.png" id="12_0xqlk"]
+[ext_resource type="Texture2D" uid="uid://dqqqax8a5agoh" path="res://Fichier 19.png" id="12_8scio"]
+[ext_resource type="Texture2D" uid="uid://dkoi4xfyp3sba" path="res://Fichier_22.png" id="13_6qoh4"]
+[ext_resource type="Texture2D" uid="uid://b4eohd2ou36al" path="res://Fichier 1.png" id="13_jyrpx"]
+[ext_resource type="Texture2D" uid="uid://cv0cbqs3dqofh" path="res://dashboard.png" id="14_7fetu"]
+[ext_resource type="Texture2D" uid="uid://lw2g4glw5id4" path="res://station1.png" id="14_nun4x"]
+[ext_resource type="Texture2D" uid="uid://boptx1tnwym18" path="res://Fichier 29.png" id="14_rq21w"]
+[ext_resource type="Texture2D" uid="uid://bb1w81pvqsqra" path="res://Fichier 33.png" id="15_vgxgh"]
+[ext_resource type="Texture2D" uid="uid://b14xepwpxgum0" path="res://Fichier 31.png" id="16_d3lf7"]
+[ext_resource type="Texture2D" uid="uid://dg74bbunuo338" path="res://Fichier_14.png" id="18_5xnu0"]
+[ext_resource type="Texture2D" uid="uid://coh21h5gh8oow" path="res://Fichier 26.png" id="18_kft2o"]
+[ext_resource type="Texture2D" uid="uid://wv6xifiib3w" path="res://Fichier_8.png" id="19_omby0"]
+[ext_resource type="FontFile" uid="uid://jo5n18gsko3o" path="res://kenvector_future.ttf" id="20_pqqyv"]
+[ext_resource type="Texture2D" uid="uid://hwrhjg5rakua" path="res://Calque_4.png" id="20_spp13"]
+[ext_resource type="Texture2D" uid="uid://bjwy6f43o6uvq" path="res://Calque_6.png" id="21_w8o3h"]
+[ext_resource type="Texture2D" uid="uid://budhcvd6stern" path="res://Fichier 35.png" id="22_cgugd"]
+[ext_resource type="Texture2D" uid="uid://bwxodjh5hgble" path="res://Fichier 37.png" id="23_ck71x"]
+[ext_resource type="Texture2D" uid="uid://xi20d0t2tkml" path="res://Fichier 32.png" id="24_rroqw"]
+[ext_resource type="Texture2D" uid="uid://ubb5eqcx7n6a" path="res://Fichier 36.png" id="25_djxgc"]
+[ext_resource type="Texture2D" uid="uid://dwcje2kdxe8iu" path="res://Fichier 27.png" id="26_ba0rs"]
+[ext_resource type="Texture2D" uid="uid://cjwgmg25616c1" path="res://Fichier_27.png" id="26_bug6a"]
+[ext_resource type="Texture2D" uid="uid://c32jkftws14v1" path="res://Fichier_29.png" id="29_kphn3"]
+[ext_resource type="Texture2D" uid="uid://cnocnouwjppih" path="res://Tutoriel-01.png" id="30_olpxu"]
+[ext_resource type="Texture2D" uid="uid://bmcfnkhi6rl0j" path="res://Calque_2.png" id="30_vnk5o"]
+[ext_resource type="Texture2D" uid="uid://cvqqx344jfmtq" path="res://Fichier 30.png" id="32_8aw0b"]
+[ext_resource type="AudioStream" uid="uid://18uxpqis7o05" path="res://Music_Panic__Supra.mp3" id="39_vahi8"]
+[ext_resource type="AudioStream" uid="uid://de566pxkj0unt" path="res://SFX_-_Slow_Mo_In.mp3" id="41_xrfjc"]
+[ext_resource type="AudioStream" uid="uid://d04yxueyyd2e" path="res://SFX_-_Slow_Mo_Out.mp3" id="42_nojpi"]
+[ext_resource type="AudioStream" uid="uid://mmgotc7dmp7f" path="res://SFX_-_Gas_Leak.mp3" id="43_bvf06"]
 
-[sub_resource type="InputEventAction" id="InputEventAction_twvih"]
+[sub_resource type="Theme" id="Theme_uy5pf"]
+default_font = ExtResource("20_pqqyv")
+default_font_size = 47
 
-[sub_resource type="Shortcut" id="Shortcut_gsl2q"]
-events = [SubResource("InputEventAction_twvih")]
+[sub_resource type="Theme" id="Theme_gk4se"]
+default_font = ExtResource("20_pqqyv")
+default_font_size = 18
+
+[sub_resource type="Theme" id="Theme_l17nd"]
+default_font = ExtResource("20_pqqyv")
+default_font_size = 37
+
+[sub_resource type="Theme" id="Theme_c23ed"]
+default_font = ExtResource("20_pqqyv")
+default_font_size = 13
+
+[sub_resource type="Theme" id="Theme_4enxh"]
+default_font = ExtResource("20_pqqyv")
+default_font_size = 27
+
+[sub_resource type="Theme" id="Theme_ety5h"]
+default_font = ExtResource("20_pqqyv")
+default_font_size = 12
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_sb4fr"]
 radius = 1.0
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_3037u")
-color_collision_in = Color(0, 1, 0, 1)
-color_collision_out = Color(1, 0, 0, 1)
 speed_increase_factor = 30.0
 speed_decrease_factor = 8.0
 pressure_increase_speed = 0.8
@@ -30,11 +80,94 @@ pressure_decrease_speed = 0.4
 supra_speed = 2400.0
 star_background = ExtResource("3_h1f80")
 supra_background = ExtResource("3_na132")
-graph1_sprite = ExtResource("4_o2jji")
-graph2_sprite = ExtResource("5_vvw0t")
-graph3_sprite = ExtResource("6_l6t6e")
-graph4_sprite = ExtResource("7_nd16k")
+wheel1_sprite = ExtResource("14_rq21w")
+wheel2_sprite = ExtResource("15_vgxgh")
+wheel3_sprite = ExtResource("16_d3lf7")
+wheel4_sprite = ExtResource("22_cgugd")
+wheel5_sprite = ExtResource("18_kft2o")
+graph1_sprite = ExtResource("4_r4kdb")
+graph2_sprite = ExtResource("5_rf8ov")
+graph3_sprite = ExtResource("6_3kdlp")
+graph4_sprite = ExtResource("7_ai3a3")
+graph5_sprite = ExtResource("8_x80g7")
+station1_sprite = ExtResource("9_hh6cn")
+station2_sprite = ExtResource("10_27hfm")
+station3_sprite = ExtResource("11_xl88n")
+station4_sprite = ExtResource("12_8scio")
+station5_sprite = ExtResource("13_jyrpx")
+spark_sprite1 = ExtResource("30_vnk5o")
+spark_sprite2 = ExtResource("20_spp13")
+spark_sprite3 = ExtResource("21_w8o3h")
+glow1 = ExtResource("32_8aw0b")
+glow2 = ExtResource("23_ck71x")
+glow3 = ExtResource("24_rroqw")
+glow4 = ExtResource("25_djxgc")
+glow5 = ExtResource("26_ba0rs")
 metadata/_edit_vertical_guides_ = []
+
+[node name="GameOverScreen" type="Control" parent="."]
+visible = false
+z_index = 16
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TextureRect" type="TextureRect" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = -136.65
+offset_top = -117.6
+offset_right = 854.35
+offset_bottom = 666.4
+scale = Vector2(0.273, 0.273)
+texture = ExtResource("19_omby0")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = -80.0
+offset_top = -100.0
+offset_right = 120.0
+offset_bottom = 20.0
+mouse_filter = 2
+theme = SubResource("Theme_uy5pf")
+text = "GAME OVER"
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = -100.0
+offset_top = 7.0
+offset_right = 100.0
+offset_bottom = 127.0
+mouse_filter = 2
+theme = SubResource("Theme_gk4se")
+text = "Stations atteintes:"
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = 40.0
+offset_top = 7.0
+offset_right = 240.0
+offset_bottom = 127.0
+mouse_filter = 2
+theme = SubResource("Theme_l17nd")
+text = "42"
+
+[node name="Button" type="Button" parent="GameOverScreen"]
+layout_mode = 0
+offset_left = -55.0
+offset_top = 55.0
+offset_right = 55.0
+offset_bottom = 85.0
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="GameOverScreen/Button"]
+layout_mode = 0
+offset_left = 7.075
+offset_top = 6.645
+offset_right = 407.075
+offset_bottom = 126.645
+mouse_filter = 2
+theme = SubResource("Theme_c23ed")
+text = "Redécoler"
 
 [node name="StaticUI" type="Control" parent="."]
 layout_mode = 3
@@ -54,18 +187,51 @@ offset_top = 386.52
 offset_right = 718.78
 offset_bottom = 176.48
 scale = Vector2(0.6, 0.6)
-texture = ExtResource("8_u476q")
+texture = ExtResource("14_7fetu")
+
+[node name="TutoWindow" type="Control" parent="StaticUI"]
+process_mode = 2
+z_index = 3000
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="TutoBackground" type="TextureRect" parent="StaticUI/TutoWindow"]
+layout_mode = 0
+offset_left = -248.0
+offset_top = -270.0
+offset_right = 743.0
+offset_bottom = 514.0
+scale = Vector2(0.5, 0.7)
+texture = ExtResource("19_omby0")
+
+[node name="TextureRect" type="TextureRect" parent="StaticUI/TutoWindow"]
+layout_mode = 0
+offset_left = -228.0
+offset_top = -260.0
+offset_right = 345.0
+offset_bottom = 313.0
+scale = Vector2(0.8, 0.8)
+texture = ExtResource("30_olpxu")
+
+[node name="Button" type="Button" parent="StaticUI/TutoWindow"]
+layout_mode = 0
+offset_left = -60.0
+offset_top = 205.0
+offset_right = 60.0
+offset_bottom = 255.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="StaticUI/TutoWindow"]
+layout_mode = 0
+offset_left = -53.0
+offset_top = 215.0
+offset_right = 67.0
+offset_bottom = 255.0
+mouse_filter = 2
+theme = SubResource("Theme_4enxh")
+text = "Jouer"
 
 [node name="Camera2D" type="Camera2D" parent="."]
-
-[node name="Background" type="Sprite2D" parent="."]
-z_index = -30
-texture_repeat = 2
-position = Vector2(-4, 21)
-scale = Vector2(0.6, 0.6)
-texture = ExtResource("3_h1f80")
-region_enabled = true
-region_rect = Rect2(0, 0, 1920, 1080)
 
 [node name="Graph" type="Node2D" parent="."]
 
@@ -75,25 +241,20 @@ anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
 
-[node name="GraphLabel" type="RichTextLabel" parent="Graph/UI"]
-offset_left = -113.0
-offset_top = 67.0
-offset_right = 116.0
-offset_bottom = 107.0
-theme = ExtResource("8_u1qvh")
-
 [node name="PressureSlider" type="VSlider" parent="Graph/UI"]
+layout_mode = 0
 offset_left = 513.0
-offset_top = 212.0
+offset_top = 202.79
 offset_right = 534.0
-offset_bottom = 373.0
+offset_bottom = 363.79
 rotation = 1.5708
-scale = Vector2(2, 2)
+scale = Vector2(2.698, 2)
 theme = ExtResource("8_u1qvh")
 max_value = 1.0
-step = 0.01
+step = 0.001
 
 [node name="SpeedBar" type="ProgressBar" parent="Graph/UI"]
+visible = false
 layout_mode = 0
 offset_left = -85.0
 offset_top = 178.0
@@ -125,67 +286,69 @@ offset_right = -456.352
 offset_bottom = 233.398
 scale = Vector2(2, 2)
 theme = ExtResource("8_u1qvh")
-shortcut = SubResource("Shortcut_gsl2q")
 
-[node name="PressureLabel" type="RichTextLabel" parent="Graph/UI"]
+[node name="RichTextLabel" type="RichTextLabel" parent="Graph/UI/HeliumButton"]
 layout_mode = 0
-offset_left = 161.0
-offset_top = -89.0
-offset_right = 276.0
-offset_bottom = -49.0
-text = "Pressure"
+offset_left = -1.0
+offset_top = 10.0
+offset_right = 113.0
+offset_bottom = 81.0
+mouse_filter = 2
+theme = SubResource("Theme_ety5h")
+text = "
+  Helium"
 
-[node name="HeliumLabel" type="RichTextLabel" parent="Graph/UI"]
+[node name="SliderNob" type="TextureRect" parent="Graph/UI"]
 layout_mode = 0
-offset_left = -319.0
-offset_top = -155.0
-offset_right = -204.0
-offset_bottom = -115.0
-text = "Helium"
-
-[node name="HeliumButtonLabel" type="RichTextLabel" parent="Graph/UI"]
-layout_mode = 0
-offset_left = -482.0
-offset_top = 197.0
-offset_right = -367.0
-offset_bottom = 249.0
-text = "Inject
-Helium"
+offset_left = 194.0
+offset_top = 203.0
+offset_right = 261.0
+offset_bottom = 341.0
+scale = Vector2(0.4, 0.4)
+mouse_filter = 2
+texture = ExtResource("10_0cshv")
 
 [node name="Graphs" type="Node2D" parent="Graph"]
-position = Vector2(0, 187)
-scale = Vector2(0.681, 1)
+position = Vector2(0, 200)
+scale = Vector2(0.654, 0.654)
 
 [node name="GraphSprite" type="Sprite2D" parent="Graph/Graphs"]
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("5_vvw0t")
+texture = ExtResource("6_3kdlp")
 
 [node name="GraphArea2D" type="Area2D" parent="Graph/Graphs"]
+visible = false
 monitorable = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D"]
-polygon = PackedVector2Array(19, 90, 3, 53, -30, 64, -48, 89, -51, 89, -72, 75, -84, 74, -94, 83, -112, 84, -111, 89)
+polygon = PackedVector2Array(-105.505, 143.731, -105.505, 134.557, -103.976, 129.969, -97.8593, 128.44, -90.2141, 131.498, -84.0979, 131.498, -77.9817, 126.911, -71.8654, 117.737, -64.2202, 116.208, -58.104, 117.737, -58.104, 117.737, -47.4006, 126.911, -36.6973, 136.086, -22.9358, 107.034, -13.7615, 97.8593, 4.58716, 87.156, 16.8196, 87.156, 24.4648, 91.7431, 30.581, 102.447, 36.6973, 120.795, 39.7554, 142.202)
 
 [node name="GraphArea2D2" type="Area2D" parent="Graph/Graphs"]
 visible = false
 monitorable = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D2"]
-polygon = PackedVector2Array(98, -15, 58, 31, 53, 91, 136, 91, 136, 0)
+polygon = PackedVector2Array(73.3945, 145.26, 168.196, 145.26, 168.196, 44.3425, 154.434, 32.1101, 136.086, 24.4648, 123.853, 22.9358, 113.15, 27.5229, 99.3884, 41.2844, 85.6269, 65.7492, 76.4526, 94.8012, 71.8654, 122.324)
 
 [node name="GraphArea2D3" type="Area2D" parent="Graph/Graphs"]
 visible = false
 monitorable = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D3"]
-polygon = PackedVector2Array(-45, 90, -84, -72, -136, 90)
+polygon = PackedVector2Array(-33.6391, 142.202, -33.6391, 129.969, -42.8135, 76.4526, -56.5749, 4.58716, -67.2783, -32.1101, -71.8654, -39.7553, -74.9235, -42.8134, -79.5107, -39.7553, -97.8593, 1.52905, -117.737, 76.4526, -136.086, 143.731)
 
 [node name="GraphArea2D4" type="Area2D" parent="Graph/Graphs"]
 visible = false
 monitorable = false
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D4"]
-polygon = PackedVector2Array(-65, -26, -112, 50, -136, 37, -136, 90, -49, 90)
+polygon = PackedVector2Array(-29.052, 143.731, -41.2844, 45.8716, -50.4587, 16.8196, -56.5749, 10.7034, -64.2202, 15.2905, -87.156, 71.8654, -99.3884, 90.2141, -110.092, 94.8012, -122.324, 88.685, -131.498, 82.5688, -133.028, 142.202)
+
+[node name="GraphArea2D5" type="Area2D" parent="Graph/Graphs"]
+visible = false
+monitorable = false
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Graph/Graphs/GraphArea2D5"]
+polygon = PackedVector2Array(-137.615, 6.11621, -68.8073, 4.58716, -18.3486, -4.58716, 21.4067, -21.4067, 50.4587, -36.6972, 70.3364, -41.2844, 96.3303, -41.2844, 125.382, -32.1101, 149.847, -15.2905, 163.609, 3.05811, 165.138, 15.2905, 165.138, 145.26, -136.086, 146.789)
 
 [node name="Timer" type="Timer" parent="Graph/Graphs"]
 
@@ -195,15 +358,7 @@ polygon = PackedVector2Array(-65, -26, -112, 50, -136, 37, -136, 90, -49, 90)
 shape = SubResource("CircleShape2D_sb4fr")
 
 [node name="Sprite2D2" type="Sprite2D" parent="Graph/Cursor"]
-modulate = Color(1, 0, 1, 1)
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_vfijh")
-
-[node name="Sprite2D3" type="Sprite2D" parent="Graph/Cursor"]
-modulate = Color(1, 0, 1, 1)
-rotation = 2.35619
-scale = Vector2(0.1, 0.1)
-texture = ExtResource("2_vfijh")
+texture = ExtResource("18_5xnu0")
 
 [node name="GraphMarkers" type="Node2D" parent="Graph"]
 
@@ -217,12 +372,111 @@ position = Vector2(-93, 128)
 position = Vector2(88, 278)
 
 [node name="CollisionCheckSprite" type="Sprite2D" parent="Graph"]
+visible = false
 position = Vector2(0, 137)
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("2_vfijh")
 
-[node name="Dashboard" type="Sprite2D" parent="."]
+[node name="SliderMarkers" type="Node2D" parent="Graph"]
+position = Vector2(208, 232)
 
+[node name="Start" type="Node2D" parent="Graph/SliderMarkers"]
+position = Vector2(2, -1)
+scale = Vector2(0.5, 0.5)
+
+[node name="End" type="Node2D" parent="Graph/SliderMarkers"]
+position = Vector2(299, 0)
+scale = Vector2(0.5, 0.5)
+
+[node name="Rail" type="Sprite2D" parent="."]
+texture_repeat = 1
+position = Vector2(0, 40)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("26_bug6a")
+
+[node name="Background" type="Sprite2D" parent="."]
+z_index = -30
+texture_repeat = 2
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_h1f80")
+region_enabled = true
+region_rect = Rect2(0, 0, 1920, 1080)
+
+[node name="Train" type="Node2D" parent="."]
+z_index = -2
+position = Vector2(-200, 0)
+
+[node name="Body" type="Node2D" parent="Train"]
+
+[node name="Normal" type="Sprite2D" parent="Train/Body"]
+position = Vector2(-803, -117)
+texture = ExtResource("12_0xqlk")
+
+[node name="Supra" type="Sprite2D" parent="Train/Body"]
+visible = false
+position = Vector2(-803, -117)
+texture = ExtResource("13_6qoh4")
+offset = Vector2(8.5, 0)
+
+[node name="Glow" type="Sprite2D" parent="Train/Body"]
+visible = false
+z_index = -4
+position = Vector2(-790, -100)
+texture = ExtResource("32_8aw0b")
+offset = Vector2(8.5, 0)
+
+[node name="Wheels" type="Sprite2D" parent="Train/Body"]
+z_index = -4
+position = Vector2(-803, 0)
+texture = ExtResource("22_cgugd")
+
+[node name="Sprite2D" type="Sprite2D" parent="Train/Body/Wheels"]
+position = Vector2(271.451, 0.498792)
+scale = Vector2(0.477473, 0.00207539)
+texture = ExtResource("29_kphn3")
+
+[node name="Sparks" type="Sprite2D" parent="Train/Body/Wheels"]
+z_index = 300
+position = Vector2(131, 11)
+scale = Vector2(0.71, 0.335)
+texture = ExtResource("30_vnk5o")
+
+[node name="TrainMarkers" type="Node2D" parent="Train"]
+
+[node name="MinSpeed" type="Node2D" parent="Train/TrainMarkers"]
+
+[node name="MaxSpeed" type="Node2D" parent="Train/TrainMarkers"]
+position = Vector2(693, -6)
+
+[node name="Supra" type="Node2D" parent="Train/TrainMarkers"]
+position = Vector2(694, -18)
+
+[node name="TrainStation" type="Node2D" parent="."]
+z_index = -1
+position = Vector2(1152, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="TrainStation"]
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("14_nun4x")
+
+[node name="SFX" type="Node" parent="."]
+
+[node name="MusicDanger" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("39_vahi8")
+autoplay = true
+
+[node name="SlowMoFadeIn" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("41_xrfjc")
+volume_db = 8.619
+
+[node name="SlowMoFadeOut" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("42_nojpi")
+
+[node name="BadBrakes" type="AudioStreamPlayer" parent="SFX"]
+stream = ExtResource("43_bvf06")
+
+[connection signal="button_down" from="GameOverScreen/Button" to="." method="_on_button_button_down"]
+[connection signal="pressed" from="StaticUI/TutoWindow/Button" to="." method="_on_button_pressed"]
 [connection signal="button_down" from="Graph/UI/HeliumButton" to="." method="_on_helium_button_button_down"]
 [connection signal="button_up" from="Graph/UI/HeliumButton" to="." method="_on_helium_button_button_up"]
 [connection signal="area_entered" from="Graph/Graphs/GraphArea2D" to="." method="_on_area_2d_area_entered"]
@@ -233,4 +487,8 @@ texture = ExtResource("2_vfijh")
 [connection signal="area_exited" from="Graph/Graphs/GraphArea2D3" to="." method="_on_area_2d_area_exited"]
 [connection signal="area_entered" from="Graph/Graphs/GraphArea2D4" to="." method="_on_area_2d_area_entered"]
 [connection signal="area_exited" from="Graph/Graphs/GraphArea2D4" to="." method="_on_area_2d_area_exited"]
+[connection signal="area_entered" from="Graph/Graphs/GraphArea2D5" to="." method="_on_area_2d_area_entered"]
+[connection signal="area_exited" from="Graph/Graphs/GraphArea2D5" to="." method="_on_area_2d_area_exited"]
 [connection signal="timeout" from="Graph/Graphs/Timer" to="." method="_on_timer_timeout"]
+[connection signal="finished" from="SFX/MusicDanger" to="." method="_on_music_danger_finished"]
+[connection signal="finished" from="SFX/SlowMoFadeIn" to="." method="_on_slow_mo_fade_in_finished"]

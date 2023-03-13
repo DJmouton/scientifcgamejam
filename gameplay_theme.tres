@@ -1,4 +1,4 @@
-[gd_resource type="Theme" load_steps=8 format=3 uid="uid://crbqslbl3hd2d"]
+[gd_resource type="Theme" load_steps=10 format=3 uid="uid://crbqslbl3hd2d"]
 
 [ext_resource type="Texture2D" uid="uid://djj4j0xqiqmea" path="res://Fichier_12.png" id="1_16yay"]
 [ext_resource type="Texture2D" uid="uid://dwcj0mn5l0v0a" path="res://Fichier_15.png" id="2_xc6u2"]
@@ -15,6 +15,10 @@ texture = ExtResource("2_xc6u2")
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_y2evs"]
 texture = ExtResource("3_j4cvl")
 
+[sub_resource type="ImageTexture" id="ImageTexture_22g5r"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_6nkms"]
+
 [resource]
 /icons/crosshair = null
 /icons/helium_button = ExtResource("1_16yay")
@@ -25,3 +29,10 @@ Button/styles/normal = SubResource("StyleBoxTexture_txewj")
 Button/styles/pressed = SubResource("StyleBoxTexture_10bh5")
 ProgressBar/styles/background = SubResource("StyleBoxTexture_y7b32")
 ProgressBar/styles/fill = SubResource("StyleBoxTexture_y2evs")
+VSlider/icons/grabber = SubResource("ImageTexture_22g5r")
+VSlider/icons/grabber_disabled = SubResource("ImageTexture_22g5r")
+VSlider/icons/grabber_highlight = SubResource("ImageTexture_22g5r")
+VSlider/icons/tick = SubResource("ImageTexture_22g5r")
+VSlider/styles/grabber_area = SubResource("StyleBoxEmpty_6nkms")
+VSlider/styles/grabber_area_highlight = SubResource("StyleBoxEmpty_6nkms")
+VSlider/styles/slider = SubResource("StyleBoxEmpty_6nkms")
